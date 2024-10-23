@@ -30,8 +30,6 @@ public class Room {
         return ( !this.isDirty() && !this.isOccupied() );
     }
 
-
-
     public void checkIn3(){
         if( !dirty && !occupied){
             occupied = true;
@@ -44,7 +42,6 @@ public class Room {
             System.out.println("Cannot check into a room that is already occupied");
         }
     }
-
     public void checkOut3(){
         if(occupied){
             occupied = false;
@@ -54,30 +51,20 @@ public class Room {
         }
 
     }
-
     public void cleanRoom3(){
         dirty = false;
     }
-
-
-
-
 
     public void checkIn2(){
             occupied = true;
             dirty = true;
     }
-
     public void checkOut2(){
             occupied = false;
     }
-
     public void cleanRoom2(){
         dirty = false;
     }
-
-
-
 
 
     public void checkIn(){
@@ -87,7 +74,6 @@ public class Room {
             dirty = true;
         }  else System.out.println("Cannot check in! The room is either occupied or not cleaned.");
     }
-
     public void checkOut(){
         if (occupied == true && dirty == true){
 
@@ -97,12 +83,10 @@ public class Room {
         }  else System.out.println("Cannot check out! The room was either not occupied or not cleaned.");
         cleanRoom();
     }
-
     public void cleanRoom(){
         dirty = false;
         System.out.println("the room is clean now! ");
     }
-
     public void resetRoom(){
         occupied = false;
         dirty = false;

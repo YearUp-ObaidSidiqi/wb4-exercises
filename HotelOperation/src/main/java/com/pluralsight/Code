@@ -1,0 +1,4 @@
+/*room.checkOut();
+        Assert.assertFalse(room.isOccupied());
+        Assert.assertFalse(room.isDirty());
+        Assert.assertTrue(room.isAvailable());*/
