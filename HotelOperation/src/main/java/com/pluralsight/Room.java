@@ -30,43 +30,6 @@ public class Room {
         return ( !this.isDirty() && !this.isOccupied() );
     }
 
-    public void checkIn3(){
-        if( !dirty && !occupied){
-            occupied = true;
-            dirty = true;
-        }
-        else if (dirty){
-            System.out.println("Cannot check into a dirty room.");
-        }
-        else if (occupied){
-            System.out.println("Cannot check into a room that is already occupied");
-        }
-    }
-    public void checkOut3(){
-        if(occupied){
-            occupied = false;
-        }
-        else{
-            System.out.println("Cannot check out of an unoccupied room!");
-        }
-
-    }
-    public void cleanRoom3(){
-        dirty = false;
-    }
-
-    public void checkIn2(){
-            occupied = true;
-            dirty = true;
-    }
-    public void checkOut2(){
-            occupied = false;
-    }
-    public void cleanRoom2(){
-        dirty = false;
-    }
-
-
     public void checkIn(){
         if (occupied == false && dirty == false){
             System.out.println("Checked In successfully");
@@ -92,5 +55,44 @@ public class Room {
         dirty = false;
         System.out.println("The room has been reset to ready state by admin.");
     }
+
+
+    public void checkIn3(){
+        if( !dirty && !occupied){
+            occupied = true;
+            dirty = true;
+        }
+        else if (dirty){
+            System.out.println("Cannot check into a dirty room.");
+        }
+        else if (occupied){
+            System.out.println("Cannot check into a room that is already occupied");
+        }
+    }
+    public void checkOut3(){
+        if(occupied){
+            occupied = false;
+        }
+        else{
+            System.out.println("Cannot check out of an unoccupied room!");
+        }
+
+    }
+
+    public void cleanRoom3(){
+        dirty = false;
+    }
+    public void checkIn2(){
+            occupied = true;
+            dirty = true;
+    }
+    public void checkOut2(){
+            occupied = false;
+    }
+
+    public void cleanRoom2(){
+        dirty = false;
+    }
+
 
 }
